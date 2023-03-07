@@ -1,0 +1,144 @@
+*{
+    margin: 0px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+.body{
+    font-family: 'Montserrat', sans-serif;
+}
+
+a{
+    text-decoration: none;
+    }
+
+.padre{
+    display: flex;
+    flex-direction: column nowrap;
+
+}
+    .header{
+        background: url(Imagenes/Estampa.jpg);       
+        display: flex;
+        flex-flow: column nowrap;
+        height: 200px;        
+        border-radius: 3px;
+    }
+        .menu{
+        background: rgba(0,0,0,.3);
+        display: flex;
+        flex-flow: column nowrap;
+        }
+            .logo{
+            flex: 1 1 auto;
+            height: 20px;
+            }
+            .logo a{
+                color: #fff;
+                text-decoration: none;}
+                .logo a:hover{
+                color: rgb(50, 47, 51);
+        }
+        .nav{
+            display: flex;
+            flex: 5 1 auto; 
+            height: 30px;
+            flex-flow: row nowrap;
+            flex-direction: row;
+            }
+                .nav a{
+                    color: #fff;
+                    font-size: 10px;
+                    text-transform:uppercase;
+                    padding: 0 10px;
+                    letter-spacing: 2px;
+                }
+                .nav a:hover{
+                    color: rgb(50, 47, 51);
+                }
+        .social{
+                display: flex;
+                flex: 1 1 auto;
+                height: 30px;
+                flex-flow: row nowrap;
+                }
+                .social a{
+                    font-size: 10px;
+                    color: #fff;
+                }
+                .social a:hover{
+                    color: rgb(50, 47, 51);
+                }
+        .texto-principal{
+        background-color: blueviolet;
+        display: flex nowrap;
+        }
+        h1{
+        background-color: yellow;
+        }
+
+.section{
+        display: flex;
+        flex-flow: wrap;
+        background-color: black;
+        margin: 5 10px;        
+        }
+        .articulos{
+            background:  #4e064bdc;
+            flex: 2 1 auto;
+            display: flex;
+            flex-flow: row wrap;
+        }
+        .article{
+            display: flexbox;
+            background-color: rgb(36, 168, 19);
+            flex: 1 1 40%;
+        }
+        .navegacion{
+            background-color: blue;
+            flex: 1 1 100%;
+        }
+        .aside{
+            background-color: aqua;
+            flex: 1 1 auto;
+        }
+            .publicidad{
+                background-color: #ffea85;
+                flex: column;
+            }
+
+.footer{
+        background-color: black;
+        display: flex;
+        justify-content: center;
+        margin: 5 10px;
+        }
+        .pie{
+            display: flex;
+            background-color: blanchedalmond;
+            width: 300px;
+    }
+@media all and (max-width: 800px){
+    .section{
+        display: flex;
+        flex-direction: column;
+    }
+    .menu{
+        display: flex;
+        flex-direction: row nowrap;
+        height: center;
+    }
+    .aside{        
+        display: flex;
+        justify-content: column;
+    }
+}
+@media all and  (max-width: 600px){
+    .articulos{        
+        flex-direction: column;
+    }
+}
+@media all and  (max-width: 400px){
+    .aside{
+        flex-direction: column;
+    }
+}
